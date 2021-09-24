@@ -118,6 +118,12 @@ body {
   }
 }
 
+@media screen and (max-width: 460px) {
+  .header__title {
+    font-size: 30px;
+  }
+}
+
 .header__arrow {
   position: absolute;
   bottom: 5%;
@@ -136,10 +142,18 @@ body {
   padding-left: 20px;
 }
 
+.nav__item a:hover {
+  color: #C4C4C4;
+  -webkit-transition: .2s all;
+  transition: .2s all;
+}
+
 .nav__link {
   color: white;
   text-decoration: none;
   font-weight: bold;
+  -webkit-transition: .2s all;
+  transition: .2s all;
   font-size: 18px;
   text-transform: uppercase;
 }
@@ -153,6 +167,12 @@ body {
 @media screen and (max-width: 750px) {
   .nav__link {
     font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .nav__link {
+    font-size: 8px;
   }
 }
 
@@ -208,6 +228,7 @@ body {
 
 .mark {
   background-image: url(../img/picture/mark.png);
+  background-repeat: no-repeat;
   width: 100%;
   margin-top: 58px;
 }
@@ -248,15 +269,6 @@ body {
           justify-content: space-between;
 }
 
-@media screen and (max-width: 640px) {
-  .form {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
 .form input {
   width: 280px;
   height: 45px;
@@ -269,37 +281,47 @@ body {
   outline: none;
 }
 
+@media screen and (max-width: 990px) {
+  .form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .form input {
+    margin-top: 10px;
+    width: 300px;
+  }
+}
+
 .form__inputclass {
   position: relative;
 }
 
-.form__inputclass img {
-  width: 30px;
-  position: absolute;
-  top: 15px;
-  right: 10px;
+.form__inputclass input {
+  background-image: url(../img/icon/Arrow.svg);
+  background-repeat: no-repeat;
+  background-position: 270px;
 }
 
 .form__inputmark {
   position: relative;
 }
 
-.form__inputmark img {
-  width: 30px;
-  position: absolute;
-  top: 15px;
-  right: 10px;
+.form__inputmark input {
+  background-image: url(../img/icon/Arrow.svg);
+  background-repeat: no-repeat;
+  background-position: 270px;
 }
 
 .form__inputmodel {
   position: relative;
 }
 
-.form__inputmodel img {
-  width: 30px;
-  position: absolute;
-  top: 15px;
-  right: 10px;
+.form__inputmodel input {
+  background-image: url(../img/icon/Arrow.svg);
+  background-repeat: no-repeat;
+  background-position: 270px;
 }
 
 .form__btnsearch {
@@ -309,12 +331,9 @@ body {
 .form__btnsearch input {
   background: #4799FD;
   width: 130px;
-}
-
-.form__btnsearch img {
-  position: absolute;
-  height: 48px;
-  left: 40px;
+  background-image: url(../img/icon/Search.svg);
+  background-repeat: no-repeat;
+  background-position: 40px;
 }
 
 .discounts__title {
@@ -355,6 +374,16 @@ body {
   width: 180px;
   height: 50px;
   font-size: 24px;
+  cursor: pointer;
+  -webkit-transition: .2s all;
+  transition: .2s all;
+}
+
+.card__btn button:hover {
+  color: white;
+  background-color: black;
+  -webkit-transition: .2s all;
+  transition: .2s all;
 }
 
 .card__img img {
@@ -398,6 +427,14 @@ body {
   color: #FFFFFF;
   text-decoration: none;
   font-size: 18px;
+  -webkit-transition: .2s all;
+  transition: .2s all;
+}
+
+.footer__link a:hover {
+  opacity: 0.6;
+  -webkit-transition: .2s all;
+  transition: .2s all;
 }
 
 .footer__copyright {
@@ -421,6 +458,9 @@ body {
   padding-left: 15px;
   font-size: 18px;
   outline: none;
+  background-image: url(../img/icon/Arrow_Email.svg);
+  background-repeat: no-repeat;
+  background-position: 250px;
 }
 
 .footer__social {

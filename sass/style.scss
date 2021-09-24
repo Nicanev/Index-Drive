@@ -111,6 +111,10 @@ body {
                 font-size: 40px;
                 line-height: 40px;
             }
+            @media screen and (max-width: 460px) {
+                font-size: 30px;
+                
+            }
         }
 
         &__arrow {
@@ -130,12 +134,17 @@ body {
 
 		&__item {
             padding-left: 20px;
+            a:hover {
+                color: #C4C4C4;
+                transition: .2s all; 
+            }
 		}
 
 		&__link {
             color: white;
             text-decoration: none;
             font-weight: bold;
+            transition: .2s all; 
             font-size: 18px;
             text-transform: uppercase;
             @media screen and (max-width: 850px) {
@@ -144,6 +153,10 @@ body {
             @media screen and (max-width: 750px) {
                 font-size: 10px;
             }
+            @media screen and (max-width: 560px) {
+                font-size: 8px;
+            }
+            
 		}
 }
 
@@ -197,6 +210,7 @@ body {
 
 .mark {
     background-image: url(../img/picture/mark.png);
+    background-repeat: no-repeat ;
     width: 100%;
     margin-top: 58px;
     &__content {
@@ -237,9 +251,6 @@ body {
     
     width: 100%;
     justify-content: space-between;
-    @media screen and (max-width: 640px) {
-        flex-direction: column;
-     }
     input {
         width: 280px;
         height: 45px;
@@ -251,33 +262,38 @@ body {
         border: none;
         outline: none;
     }
+    @media screen and (max-width: 990px) {
+        flex-direction: column;
+        input {
+            margin-top: 10px;
+            width: 300px;
+        }
+     }
     &__inputclass {
         position: relative;
-        img {
-            width: 30px;
-            position: absolute;
-            top: 15px;
-            right: 10px;
+        input {
+            background-image: url(../img/icon/Arrow.svg);
+        background-repeat: no-repeat;
+        background-position: 270px;
         }
+        
     }
 
     &__inputmark {
         position: relative;
-        img {
-            width: 30px;
-            position: absolute;
-            top: 15px;
-            right: 10px;
+        input {
+            background-image: url(../img/icon/Arrow.svg);
+        background-repeat: no-repeat;
+        background-position: 270px;
         }
     }
 
     &__inputmodel {
         position: relative;
-        img {
-            width: 30px;
-            position: absolute;
-            top: 15px;
-            right: 10px;
+        input {
+            background-image: url(../img/icon/Arrow.svg);
+        background-repeat: no-repeat;
+        background-position: 270px;
         }
     }
 
@@ -287,12 +303,11 @@ body {
         input {
             background: #4799FD;
             width: 130px;
+            background-image: url(../img/icon/Search.svg);
+            background-repeat: no-repeat;
+            background-position: 40px;
         }
-        img {
-            position: absolute;
-            height: 48px;
-            left: 40px; 
-        }
+        
     }
 }
 
@@ -338,6 +353,13 @@ body {
             width: 180px;
             height: 50px;
         font-size: 24px;
+        cursor: pointer;
+        transition: .2s all; 
+        }
+        button:hover {
+            color: white;
+            background-color: black;
+            transition: .2s all; 
         }
         
     }
@@ -380,7 +402,11 @@ body {
             color: #FFFFFF;
             text-decoration: none;
             font-size: 18px;
-            
+            transition: .2s all; 
+        }
+        a:hover {
+            opacity: 0.6;
+            transition: .2s all; 
         }
     }
     &__copyright {
@@ -407,6 +433,9 @@ body {
             padding-left: 15px;
             font-size: 18px;
             outline: none;
+            background-image: url(../img/icon/Arrow_Email.svg);
+            background-repeat: no-repeat;
+            background-position: 250px;
         }
     }
     &__social {
