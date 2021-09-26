@@ -7,6 +7,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 
 .wrapper {
@@ -392,9 +393,18 @@ body {
   width: 600px;
 }
 
+.main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
 .footer {
   margin-top: 15px;
   background-color: #1D1C1C;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
 }
 
 .footer__content {
@@ -494,7 +504,7 @@ body {
 .page-header {
   height: 64px;
   width: 100%;
-  background-color: black;
+  background-color: #1D1C1C;
 }
 
 .page-header__menu {
@@ -514,6 +524,10 @@ body {
   margin-top: 4px;
 }
 
+.booking__content {
+  margin-bottom: 20vh;
+}
+
 .booking__pictures {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -529,6 +543,15 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media screen and (max-width: 1180px) {
+  .booking__desc {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .booking__specification {
@@ -723,4 +746,210 @@ body {
   font-weight: bold;
   font-size: 24px;
   margin-bottom: 18px;
+}
+
+.profile {
+  margin-top: 32px;
+}
+
+.profile__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.profile__title {
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.profile__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 650px;
+}
+
+.profile__name {
+  margin-top: 60px;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+@media screen and (max-width: 605px) {
+  .profile__name {
+    font-size: 14px;
+    margin-top: 100px;
+  }
+}
+
+.profile__scrores {
+  margin-top: 60px;
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+  background-image: url(../img/icon/Scores_background.svg);
+  background-repeat: no-repeat;
+  padding-left: 5px;
+  padding-top: 2px;
+  width: 69px;
+  margin-left: 17px;
+  height: 29px;
+}
+
+.profile__countbooking {
+  margin-top: -60px;
+  font-size: 18px;
+  color: #777777;
+}
+
+@media screen and (max-width: 605px) {
+  .profile__countbooking {
+    font-size: 12px;
+  }
+}
+
+.profile__compbooking {
+  margin-top: 37px;
+  margin-bottom: 50vh;
+}
+
+.compbooking__title {
+  color: #777777;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.compbooking__items {
+  margin-top: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 12px;
+  color: #777777;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media screen and (max-width: 995px) {
+  .compbooking__items {
+    font-size: 8px;
+  }
+}
+
+.login {
+  width: 100%;
+  margin-bottom: 30vh;
+}
+
+.login__content {
+  width: 100%;
+}
+
+.login__logo {
+  margin: 75px auto 26px auto;
+  width: 173px;
+}
+
+.login__block {
+  margin: 0 auto;
+  width: 580px;
+  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  height: 476px;
+}
+
+.login__blockcontent {
+  margin: 0 auto;
+  padding-top: 42px;
+  width: 480px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.login__title {
+  width: 50%;
+  font-weight: bold;
+  font-size: 24px;
+  color: black;
+  margin-left: -10px;
+}
+
+.login__registarion {
+  width: 10%;
+  margin-left: 120px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #379DFB;
+  cursor: pointer;
+}
+
+.login__tel {
+  margin-top: 35px;
+  width: 447px;
+  margin-bottom: 30px;
+}
+
+.login__tel input {
+  width: 100%;
+  height: 55px;
+  border-radius: 5px;
+  border: 1px solid #000000;
+  outline: none;
+  font-size: 18px;
+  padding-left: 5px;
+}
+
+.login__tel ::-webkit-input-placeholder {
+  color: black;
+  font-weight: bold;
+}
+
+.login__password {
+  width: 447px;
+  margin-bottom: 30px;
+}
+
+.login__password input {
+  width: 100%;
+  height: 55px;
+  border-radius: 5px;
+  border: 1px solid #000000;
+  outline: none;
+  font-size: 18px;
+  padding-left: 5px;
+}
+
+.login__password ::-webkit-input-placeholder {
+  color: black;
+  font-weight: bold;
+}
+
+.login__btn input {
+  background: #379DFB;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  width: 457px;
+  height: 79px;
+}
+
+.login__forgotpassword {
+  font-weight: bold;
+  font-size: 16px;
+  color: #379DFB;
+  margin-top: 12px;
+  cursor: pointer;
 }
