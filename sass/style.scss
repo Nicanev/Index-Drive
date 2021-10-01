@@ -223,6 +223,12 @@ body {
         line-height: 59px;
         text-align: center;
         color: white;
+        @media screen and (max-width: 700px) {
+            font-size: 24px;
+        }
+        @media screen and (max-width: 490px) {
+            font-size: 18px;
+        }
     }
 }
 
@@ -264,11 +270,27 @@ body {
         border: none;
         outline: none;
     }
+    select{
+        width: 280px;
+    height: 45px;
+    font-size: 14px;
+    color: #707070;
+    padding-left: 23px;
+        border-radius: 6px;
+        background: #ECF1F7;
+        border: none;
+        outline: none;
+        -webkit-appearance: none;
+    }
+    
     @media screen and (max-width: 990px) {
         flex-direction: column;
-        input {
-            margin-top: 10px;
+        select {
+            margin-top: 20px;
             width: 300px;
+        }
+        input {
+            margin-top: 20px;
         }
      }
     &__inputclass {
@@ -278,24 +300,29 @@ body {
         background-repeat: no-repeat;
         background-position: 270px;
         }
+        select {
+            background-image: url(../img/icon/Arrow.svg);
+        background-repeat: no-repeat;
+        background-position: 250px;
+        }
         
     }
 
     &__inputmark {
         position: relative;
-        input {
+        select {
             background-image: url(../img/icon/Arrow.svg);
         background-repeat: no-repeat;
-        background-position: 270px;
+        background-position: 250px;
         }
     }
 
     &__inputmodel {
         position: relative;
-        input {
+        select {
             background-image: url(../img/icon/Arrow.svg);
         background-repeat: no-repeat;
-        background-position: 270px;
+        background-position: 250px;
         }
     }
 
@@ -327,6 +354,9 @@ body {
         display: flex;
         justify-content: space-between;
         margin-top: 60px;
+        @media screen and (max-width: 995px) {
+            flex-direction: column;
+        }
     }
 }
 
@@ -367,6 +397,9 @@ body {
     }
 
     &__right {
+        @media screen and (max-width: 995px) {
+            margin-top: 10px;
+        }
     }
 
     &__img {
@@ -844,7 +877,7 @@ body {
         width: 580px;
         box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25);
         border-radius: 20px;
-        height: 476px;
+        
     }
 
     &__blockcontent {
@@ -890,11 +923,7 @@ body {
             font-size: 18px;
             padding-left: 5px;
         }
-        ::-webkit-input-placeholder { 
-            color:    black;
-            font-weight: bold;
-            
-        }
+        
     }
 
     &__password {
@@ -909,11 +938,7 @@ body {
             font-size: 18px;
             padding-left: 5px;
         }
-        ::-webkit-input-placeholder { 
-            color:    black;
-            font-weight: bold;
-            
-        }
+        
     }
 
     &__btn {
@@ -935,6 +960,7 @@ body {
         color: #379DFB;
         margin-top: 12px;
         cursor: pointer;
+        margin-bottom: 30px;
     }
 }
 
