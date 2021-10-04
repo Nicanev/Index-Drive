@@ -188,6 +188,12 @@ body {
   margin-bottom: 58px;
 }
 
+@media screen and (max-width: 660px) {
+  .about__title {
+    font-size: 24px;
+  }
+}
+
 .about__title span {
   font-weight: bold;
   color: #000000;
@@ -1083,4 +1089,20 @@ body {
   font-size: 24px;
   cursor: pointer;
   margin-bottom: 28px;
+}
+
+.branches__title {
+  font-weight: bold;
+  font-size: 24px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.branches__img {
+  margin: 0 auto;
+  width: 1024px;
+}
+
+.branches__img img {
+  max-width: 100%;
 }
